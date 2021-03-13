@@ -1,0 +1,47 @@
+<html> 
+<head> 
+<title>online exam</title> 
+<script language="javascript"> 
+function exam(form) 
+{ 
+var i=0; 
+if(form.one[3].checked) 
+i=i+1; 
+if(form.three[1].checked) 
+i=i+1;  
+window.alert("Your Score is: "+i); 
+} 
+</script> 
+</head> 
+<body align=center bgcolor=white> 
+<form onSubmit="exam(this)"> 
+	<br><br>
+<center><h1><blink>Online Examination</blink></h1></center> 
+<p> <br>
+<h1>1)Who is the father of c</h1> 
+<input type="radio" name="one" value=""> 
+<label>Rob Pike</label> 
+<input type="radio" name="one" value=""> 
+<label>Bjarne Stroustrup</label> 
+<input type="radio" name="one" value=""> 
+<label>Brian Kernighan</label> 
+<input type="radio" name="one"value=""> 
+<label>Dennis Ritchie</label> 
+</p> 
+<p> 
+<h1>2) Who is the father of c++</h1> 
+<input type="radio" name="three" value=""> 
+<label>Dennis Ritchie</label> 
+<input type="radio" name="three" value=""> 
+<label>Bjarne Stroustrup</label> 
+<input type="radio" name="three" value=""> 
+<label>Rob Pike</label> 
+<input type="radio" name="three" value=""> 
+<label>Brian Kernighan</label> </p> 
+<p><center> 
+	<br>
+<input type="submit" value="Submit"> 
+<input type ="reset" value="Reset"> 
+</center></p> 
+</body> 
+</html> 

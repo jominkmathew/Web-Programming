@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<script> 
+function registration() 
+{ 
+var name = document.forms["reg"]["name"]; 
+var pass = document.forms["reg"]["pass"]; 
+var submit=document.forms["reg"]["sub"]
+if (name.value == "")
+{ 
+window.alert("Please enter your Username"); 
+name.focus(); 
+return false; 
+} 
+if (pass.value == "") 
+{ 
+window.alert("Please enter your Password"); 
+pass.focus(); 
+return false; 
+}
+if (pass.value && name.value) 
+{ 
+window.alert("Succesfully Logined"); 
+sub.focus(); 
+return false; 
+}
+return true;
+} 
+</script> 
+<link rel="stylesheet" href="style.css">           
+</head>
+<body class=bg>
+<form name="reg" onsubmit="return registration()" class="box" action="Validate.html" method="post" >
+<h1>Login</h1>
+<input type="text" name="name" placeholder="Username">
+<input type="password" name="pass" placeholder="Password">
+<input type="submit" name="sub" value="Login">
+</form>
+</body>
+</html>
